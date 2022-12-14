@@ -1,0 +1,15 @@
+.collapsible {
+  display: none;
+}
+
+.is-collapsed {
+  display: block;
+}
+
+.art {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+}
