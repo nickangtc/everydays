@@ -1,0 +1,20 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.collapsible {
+  display: none;
+}
+
+.is-not-collapsed {
+  display: block;
+}
+
+#ai, #human {
+  width: 50%;
+  flex-grow: 0;
+  border: 1px solid black;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
