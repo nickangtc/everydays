@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <meta property="og:title" content="everydays">
+  <meta property="og:locale" content="en_US">
+  <meta name="description" content="1 web project everyday">
+  <meta property="og:description" content="1 web project everyday">
+  <link rel="canonical" href="https://nickangtc.github.io/everydays/">
+  <meta property="og:url" content="https://nickangtc.github.io/everydays/">
+  <meta property="og:site_name" content="everydays">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="everydays">
+  <script src="index.js" type="text/javascript"></script>
+  <title>Accelerate, retard</title>
+</head>
+<body>
+  <h1>Accelerate, retard</h1>
+  <main>
+    <div class="background">
+      <div class="runner"></div>
+    </div>
+    <div class="background fast">
+      <div class="runner fast"></div>
+    </div>
+  </main>
+  <footer>
+    <button id="collapse-toggle">Notes</button>
+    <section class="collapsible">
+      <p>First thing I need to learn to make work: how to animate a sprite of a running person so it runs on the spot. Downloaded free sprite of man running from <a href="https://vecteezy.com">vecteezy.com</a></p>
+      <p>Okay animating my first sprite sheet took almost 30 minutes but it's done. A bit janky at parts but it does create the illusion of a running person, albeit on the spot. Even resizes to fit the viewport for smaller devices!</p>
+      <p>Next, to create two lanes, and animate the guy moving left to right.</p>
+      <p>This one's just bad. I don't have the CSS animation skills to pull off something even close to what I imagined in my head, so I'm going to explain in words just wtf is going on here:</p>
+      <ul>
+        <li>I wanted to animate two lanes, one stacked on top of each other, where the background moves infinitely toward the left, making it look like the man is running to the right at a certain speed.</li>
+        <li>I wanted the speed of running of both men to be the same at the start.</li>
+        <li>But I wanted to show that the first man, because he runs consistently without pausing, will start to pick up pace to a terminal velocity. Huge momentum. Meanwhile, the bottom lane guy will always slow down for a while before picking back up again.</li>
+        <li>I'd have used JavaScript to trial-and-error a smooth acceleration for the top lane guy and additionally smooth retardation for the bottom lane guy.</li>
+      </ul>
+      <p>Alas, I failed tragicomically!</p>
+      <p>The story I wanted to tell was the cost of context switching, and how, in order for us to really accelerate our growth in one area, we'd need to say "no" and eliminate our commitments in other areas.</p>
+      <p>Drawing from my life right now, I have this Everydays project where I want to make one web project everyday. Even if I fail, I know I'm learning. But I also have a weekly newsletter commitment. I don't see myself being very happy if some days each week I have to set aside time for BOTH coding the web project and writing a newsletter. I'd have an infinite back-and-forth in my head about which one is a higher priority (neither! they must both be done!) and knowing myself, that would just lead to me doing subpar work out of resentment.</p>
+      <p>Yeah, I wanted to illustrate <em>that</em>.</p>
+    </section>
+  </footer>
+</body>
+</html>
+
