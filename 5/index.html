@@ -16,22 +16,28 @@
   <meta name="twitter:card" content="summary">
   <meta property="twitter:title" content="everydays">
   <script src="index.js" type="text/javascript"></script>
-  <title>???</title>
+  <title>mobile canvas</title>
 </head>
 <body>
-  <h1>???</h1>
+  <h1>mobile canvas</h1>
+  <p>Warning: this won't work on desktop because it's capturing touch events. Use a phone.</p>
   <main>
-
+    <canvas id="canvas" width="600" height="600" style="border:solid black 1px;">
+      Your browser does not support canvas element.
+    </canvas>
+    <br />
+    Log:
+    <pre id="log" style="border: 1px solid #ccc;"></pre>
   </main>
   <footer>
+    <small>
+      made by <a href="https://www.nickang.com/">Nick Ang</a> (also on <a href="https://www.instagram.com/nickang_crap/">IG</a>) on <time>
+        15 Dec 2022
+      </time>
+    </small>
     <button id="collapse-toggle">Notes</button>
     <section class="collapsible">
-      <small>
-        made by <a href="https://www.nickang.com/">Nick Ang</a> on <time>
-          15 Dec 2022
-        </time>
-      </small>
-      <p>notes</p>
+      <p>A lot of the code for this was copied and tweaked from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events">MDN's tutorial on touch events</a>.</p>
     </section>
   </footer>
 </body>
