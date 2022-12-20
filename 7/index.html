@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <meta property="og:title" content="everydays">
+  <meta property="og:locale" content="en_US">
+  <meta name="description" content="1 web project everyday">
+  <meta property="og:description" content="1 web project everyday">
+  <link rel="canonical" href="https://nickangtc.github.io/everydays/">
+  <meta property="og:url" content="https://nickangtc.github.io/everydays/">
+  <meta property="og:site_name" content="everydays">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="everydays">
+  <script src="index.js" type="text/javascript"></script>
+  <title>poke</title>
+</head>
+<body>
+  <h1>poke</h1>
+  <main>
+    <canvas id="canvas" width="350" height="600"></canvas>
+  </main>
+  <footer>
+    <small>
+      made by <a href="https://www.nickang.com/">Nick Ang</a> (<a href="https://www.instagram.com/nickang_crap/">IG</a>) on <time>
+        20 Dec 2022
+      </time>
+    </small>
+    <button id="collapse-toggle">Notes</button>
+    <section class="collapsible">
+      <p>Finally did the right calculations to ensure that each touch is offset properly onto the canvas element. A small win.</p>
+      <p>This is the first project where I really want to test on my iPhone rather than simulate the iPhone on Chrome so I can try to register multiple touches on the canvas as well as explore varying force pressure. Without a USB cable with me I decided to go down the path described in <a href="https://www.joshwcomeau.com/blog/local-testing-on-an-iphone/">this article</a>, which is to use ngrok to tunnel the localhost port to the public.</p>
+      <p>... and... it works! Viewing on mobile now. Happy.</p>
+      <p>WHOA, browser-sync works on my phone too! That's probably because of the way browser-sync works - it sends javascript over the wire to the browser(s).</p>
+      <p>Order of building this up:</p>
+      <ol>
+        <li>touch -> draw 1 poke hole (circle, black by default)</li>
+        <li>touch -> draw bleed from hole down the page infinitely</li>
+        <li>touch -> ensure bleed drawing stops once it reached bottom edge of canvas (performance)</li>
+        <li>add force multiplier based on touch pressure - failed on iPhone, force always = 1</li>
+        <li>add multi-touch support so 3 fingers simultaneously creates 3 bleeding holes</li>
+        <li>add varying sizes to poke hole</li>
+        <li>add varying colours to bleed</li>
+      </ol>
+      <p>Design decisions:</p>
+      <ul>
+        <li>Don't fiddle with canvas dynamic resizing. It detracts from the art. I fixed the width to 350px and height to 600px. Done.</li>
+      </ul>
+    </section>
+  </footer>
+</body>
+</html>
+
