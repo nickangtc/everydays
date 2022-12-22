@@ -12,4 +12,8 @@ function enableNotesToggle() {
   collapseToggle.addEventListener("click", () => {
     collapsible.classList.toggle("is-not-collapsed");
   });
+  // If we're on localhost, show the notes by default
+  if (window.location.origin.includes("http://localhost")) {
+    collapsible.classList.toggle("is-not-collapsed");
+  }
 }
