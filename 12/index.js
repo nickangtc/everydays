@@ -4,8 +4,6 @@ let canvas;
 let ctx;
 
 function start() {
-  enableNotesToggle();
-
   canvas = document.querySelector("#canvas");
   ctx = canvas.getContext("2d");
 
@@ -94,21 +92,4 @@ function getCanvasCoordinates(touchPageX, touchPageY) {
   const canvasX = touchPageX - canvasRect.left - window.scrollX;
   const canvasY = touchPageY - canvasRect.top - window.scrollY;
   return [canvasX, canvasY];
-}
-
-/**
- * Utils
- */
-function enableNotesToggle() {
-  const collapseToggle = document.querySelector("#collapse-toggle");
-  const collapsible = document.querySelector(".collapsible");
-
-  collapseToggle.addEventListener("click", () => {
-    collapsible.classList.toggle("is-not-collapsed");
-  });
-
-  // If we're on localhost, show the notes by default
-  if (window.location.origin.includes("http://localhost")) {
-    collapsible.classList.toggle("is-not-collapsed");
-  }
 }

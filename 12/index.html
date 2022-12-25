@@ -25,17 +25,18 @@
     <canvas id="canvas" width="400" height="400"></canvas>
   </main>
   <footer>
+    <section id="notes">
+      <h3>Notes</h3>
+      <p>A small improvement to the previous <a href="../7">poke</a> - the "blood" accumulates once the bleed hits the bottom of the square.</p>
+      <p>I'm aware that this accumulation is unrealistic, though I think some observers might not realise it! The liquid's accumulation should be cumulative rather than independent. Right now it looks as though the liquids don't mix at all and are instead filling up the container (canvas) as if they were empty.</p>
+      <p>Since I wasn't trying to go for any effect in particular, I'm not going to try and keep a variable for making the liquid level rise cumulatively faster. I'm going to instead spend the time to read The Nature of Code and plot the next project in my mind!</p>
+    </section>
+
     <small>
       made by <a href="https://www.nickang.com/">Nick Ang</a> (<a href="https://www.instagram.com/nickang_crap/">IG</a>) on <time>
         25 Dec 2022
       </time>
     </small>
-    <button id="collapse-toggle">Notes</button>
-    <section class="collapsible">
-      <p>A small improvement to the previous <a href="../7">poke</a> - the "blood" accumulates once the bleed hits the bottom of the square.</p>
-      <p>I'm aware that this accumulation is unrealistic, though I think some observers might not realise it! The liquid's accumulation should be cumulative rather than independent. Right now it looks as though the liquids don't mix at all and are instead filling up the container (canvas) as if they were empty.</p>
-      <p>Since I wasn't trying to go for any effect in particular, I'm not going to try and keep a variable for making the liquid level rise cumulatively faster. I'm going to instead spend the time to read The Nature of Code and plot the next project in my mind!</p>
-    </section>
   </footer>
 </body>
 </html>
