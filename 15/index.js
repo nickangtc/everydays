@@ -3,9 +3,6 @@ let fr = 1;
 const HEIGHT = 400;
 const WIDTH = 400;
 
-const BAR_WIDTH = 2;
-const BAR_HEIGHT = 50;
-
 function setup() {
   frameRate(fr);
   createCanvas(WIDTH, HEIGHT);
