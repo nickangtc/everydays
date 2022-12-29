@@ -1,10 +1,11 @@
-const FR = 20;
+const FR = 30;
 const HEIGHT = 400;
 const WIDTH = 400;
-
+const BAR_THICKNESS = 2;
+const STEP = 10;
 const MEAN = 0;
 const SD = 2;
-const count = {};
+const dict = {};
 
 function setup() {
   frameRate(FR);
@@ -13,16 +14,18 @@ function setup() {
 
 function draw() {
   const num = roundToOneDecimal(randomGaussian(MEAN, SD));
-  count[num] = count[num] ? count[num] + 1 : 1;
+  dict[num] = dict[num] ? dict[num] + 1 : 1;
 
   noStroke();
   fill("black");
 
-  Object.keys(count).forEach((num) => {
-    const xloc = map(num, -5, 5, 0, WIDTH);
-    const yloc = HEIGHT / 2;
+  Object.keys(dict).forEach((key) => {
+    const xloc = map(key, -5, 5, 0, WIDTH);
+    const yloc = HEIGHT;
 
-    rect(xloc, yloc, 2, -Math.abs(num * 20));
+    // x, y, width, height
+    // key, fixed, fixed, value
+    rect(xloc, yloc, BAR_THICKNESS, -dict[key] * STEP);
   });
 }
 
