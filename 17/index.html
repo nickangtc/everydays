@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <meta property="og:title" content="everydays">
+  <meta property="og:locale" content="en_US">
+  <meta name="description" content="1 web project everyday">
+  <meta property="og:description" content="1 web project everyday">
+  <link rel="canonical" href="https://nickangtc.github.io/everydays/">
+  <meta property="og:url" content="https://nickangtc.github.io/everydays/">
+  <meta property="og:site_name" content="everydays">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="everydays">
+  <script src="../lib/external/p5.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+  <title>Clouds (2D Perlin noise)</title>
+</head>
+<body>
+  <h1>Clouds (2D Perlin noise)</h1>
+  <main>
+
+  </main>
+  <footer>
+    <section id="notes">
+      <h3>Notes</h3>
+      <p>Refresh to get new clouds!</p>
+      <p>p5 TIL: Once you call `createCanvas(400, 500)`, it sets a global variable `width` with value 400, and `height` as 500 for easy access later on. I've been declaring those myself as constants to be passed into the `createCavnas`. I might as well adopt it since I'm already in their world.</p>
+      <p>Visual TIL: I'm just realising that what is visually a 3D piece (depth into/out of the screen) is actually clever colouration on 2D space that gives the illusion of depth! Of course it is 2D, the screen is ultimately a 2D space!</p>
+      <p>p5 TIL: I usually set aside 1.5 hours per day to work on these and right now it's 10 mintues to the end time (before I need to pack up and start traveling with my family, currently in Seville, Spain) and I'm still stuck on trying to do the math for updating pixels that are laid out on the `pixels` array in p5.js. It's a nightmare - my brain, or maybe the human brain, just doesn't think in fours across a 2D space! Luckily I discovered the `<a href="https://p5js.org/reference/#/p5/set">set</a>` function from p5.js... it's so much better than trying to manipulate the 4 consecutive items in the `pixels` array that represent a single pixel at a particular coordinate.</p>
+    </section>
+
+    <small>
+      made by <a href="https://www.nickang.com/">Nick Ang</a> (<a href="https://www.instagram.com/nickang_crap/">IG</a>) on <time>
+        30 Dec 2022
+      </time> in the rooftop of his campervan in a parking lot in Seville, Spain, as part of <a href="../">Everydays project</a>.
+    </small>
+  </footer>
+</body>
+</html>
+
