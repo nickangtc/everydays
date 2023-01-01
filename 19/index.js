@@ -1,4 +1,4 @@
-const fr = 20;
+const fr = 40;
 const numOfBalls = 30;
 
 const balls = [];
