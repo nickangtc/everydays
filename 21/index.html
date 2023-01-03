@@ -17,10 +17,10 @@
   <meta property="twitter:title" content="everydays">
   <script src="../lib/external/p5.js" type="text/javascript"></script>
   <script src="index.js" type="text/javascript"></script>
-  <title>???</title>
+  <title>Glitch art</title>
 </head>
 <body>
-  <h1>???</h1>
+  <h1>Glitch art</h1>
   <main>
 
   </main>
@@ -38,6 +38,7 @@
           <li>-- loop through all every pixel row on y-axis, toss a dice</li>
           <li>---- if it falls within the probability, glitch the row!</li>
           <li>-- do a whole image glitch once in a while too</li>
+          <li>-- pick randomly from a list of blend modes to make the glitchs look different from one another</li>
       </ul>
       <p>A surprising learning is how tricky it is to get the probabilities right. I wanted to make the whole picture glitch <strong>rarer</strong> than the row-specific glitch, so you'd think that the probability should be smaller, right? Nope... turns out I had to multiply the probability for the whole picture glitch to make it appear often enough (and still less often than the smaller row-specific glitch). Why? Because there are 400 pixels on the y-axis, and a probability of 0.001 for each of them to glitch already creates the effect I wanted. But if I used 0.001 (or something even smaller) for the whole image glitch, then it comes waaaay to infrequent because every cycle this dice throw happens only once (versus 400 times).</p>
       <p>Created with <a href="https://p5js.org/">p5.js</a>, a JavaScript library for creative coding.</p>
