@@ -2,14 +2,14 @@ let preloadedImg;
 let pixd;
 let barBlendModes;
 let wholePictureBlendModes;
-const probabilityToGlitch = 0.005;
+const probabilityToGlitch = 0.004;
 
 function setup() {
   frameRate(10);
   createCanvas(400, 400);
   image(preloadedImg, 0, 0, 400, 400, 0, 0, 400, 400, COVER);
   pixd = pixelDensity();
-  barBlendModes = [BLEND, BURN, OVERLAY];
+  barBlendModes = [BLEND, BLEND, BLEND, OVERLAY];
   wholePictureBlendModes = [LIGHTEST, SOFT_LIGHT, OVERLAY];
 }
 
@@ -23,7 +23,6 @@ function draw() {
   clear();
   image(preloadedImg, 0, 0, 400, 400, 0, 0, 400, 400, COVER);
 
-  // very low probability whole image shift and overlay to create a glitch effect
   const shouldGlitchImage = random(0, 1.0) < probabilityToGlitch * 20;
   if (shouldGlitchImage) {
     const shiftDirection = random(0, 1.0) < 0.5 ? -1 : 1;
