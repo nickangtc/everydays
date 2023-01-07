@@ -11,7 +11,7 @@ code {
 }
 
 canvas {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
   display: block;
   /* margin: 3em auto; */
 }
