@@ -18,7 +18,7 @@ let colors = [
 ];
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(350, 350);
   background(0);
   drawFlower(width * 0.5, height * 0.5, width * 0.4);
   frameRate(1);
