@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <meta property="og:locale" content="en_US">
+  <meta name="description" content="1 web project everyday">
+  <meta property="og:description" content="1 web project everyday">
+  <meta property="og:site_name" content="everydays">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <script src="../lib/external/p5.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+
+  <!--  Reminder to self: update these with today's title  -->
+  <title>Person of character (ASCII text image)</title>
+  <meta property="twitter:title" content="Person of character (ASCII text image)">
+  <meta property="og:title" content="Person of character (ASCII text image)">
+  <!--  Also add number to these  -->
+  <meta property="og:url" content="https://nickangtc.github.io/everydays/">
+  <link rel="canonical" href="https://nickangtc.github.io/everydays/">
+
+</head>
+<body>
+  <h1>Person of character (ASCII text image)</h1>
+  <main>
+
+  </main>
+  <div id="sliders"></div>
+
+  <footer>
+    <section id="notes">
+      <h3>notes</h3>
+      <!-- notes -->
+      <img src="./guy-profile-300x300.jpg" alt="baby image 300 x 300">
+      <p>Today's Genuary prompt is: Something you've always wanted to learn.</p>
+      <p>So many things! But the thing I noticed myself wondering the last few days was how ASCII art is generated. Let me tell a short story on this one.</p>
+      <p>At my full-time job, I've had the chance to work on a task recently to try and convert a user-uploaded image to a grayscale image so that it can be printed by a receipt printer. Receipt printers don't print in colour, so it's better that we feed it a grayscale image so we can control the way it renders.</p>
+      <p>This task came at an incredible timing because it coincides with me just starting to create a generative art project a day. The prototype approach I went for at work was to use the browser's `canvas` element and its built-in APIs to obtain a file after manipulating individual pixels to have a gray value that is the average of the original uploaded image's RGB values. Guess where I learned a whole bunch about using HTML canvas and its associated APIs? :)</p>
+      <p>So while that task simmered in my mind, I started to follow a bunch of Instagram accounts of people who are, like me, taking on the <a href="https://genuary.art/">Genuary 2023 challenge</a> - one generative art piece a day for the whole of January. One of those accounts (<a href="https://www.instagram.com/p/Cmw0fJptU4T/">@julian_hespenheide</a>) does a lot of ASCII art. And not just static ASCII art either - <em>video</em> ASCII art! My programmer's brain started wondering how they did that...</p>
+      <p>... and then it hit me that every picture is an array of pixels, and if I mapped each pixel to a particular ASCII character, since some characters are denser (and thereby brighter) than others, I could programmatically convert each pixel to a suitable character and print that on the page to achieve ASCII art! 🪄✨</p>
+      <p>So I went online, found out about Daniel Shiffman (see note below), and found one of his coding challenge tutorials called ASCII text images. Boom - he confirmed for me that my approach will work, because it's the same one as his!</p>
+
+      <p>Today I made the incredible discovery by watching <a href="https://www.youtube.com/watch?v=Qf4dIN99e2w">this video</a> that The Coding Train YouTube channel is actually run by Daniel Shiffman. That's HUGE because I've been reading a book by some Daniel Shiffman called <a href="https://natureofcode.com/">The Nature of Code</a>, and I had no idea that the person who has been teaching me via his video tutorials is actually the same author whom I'm learning from. 🤯</p>
+      <p>Resources referred to while creating today's project:</p>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=55iwMYv8tGI">Coding Challenge 166: ASCII Text Images</a></li>
+      </ul>
+      <p>created with <a href="https://p5js.org/">p5.js</a>, a JavaScript library for creative coding.</p>
+    </section>
+
+    <small>
+      made by <a href="https://www.nickang.com/">Nick Ang</a> (follow on <a href="https://www.instagram.com/nickang_crap/">IG</a>) on <time>
+        13 Jan 2023
+      </time> in the south of Spain as part of the <a href="../">Everydays project</a>.
+    </small>
+  </footer>
+</body>
+</html>
+
