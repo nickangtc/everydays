@@ -36,8 +36,4 @@ main {
   main {
     overflow-x: auto;
   }
-
-  canvas {
-    margin: 2em 1em;
-  }
 }
