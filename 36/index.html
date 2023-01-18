@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <meta property="og:locale" content="en_US">
+  <meta name="description" content="1 web project everyday">
+  <meta property="og:description" content="1 web project everyday">
+  <meta property="og:site_name" content="everydays">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <script src="index.js" type="text/javascript"></script>
+
+  <!--  Reminder to self: update these with today's title  -->
+  <title>🛠 Text utilities (free, without network requests)</title>
+  <meta property="twitter:title" content="Text utilities (free, without network requests) 🛠">
+  <meta property="og:title" content="Text utilities (free, without network requests) 🛠">
+  <!--  Also add number to these  -->
+  <meta property="og:url" content="https://nickangtc.github.io/everydays/36">
+  <link rel="canonical" href="https://nickangtc.github.io/everydays/36">
+
+</head>
+<body>
+  <h1>Text utilities (free, without network requests) 🛠</h1>
+  <main>
+    <section>
+      <h3>Get the set of unique characters used in a body of text</h3>
+      <div class="callout">
+        <p><strong>For example:</strong></p>
+        <p>aaaaabbcde 122222222233340</p>
+        <p>⬇️ ⬇️ ⬇️</p>
+        <p>abcde 12340</p>
+      </div>
+      <form id="uniqueChars">
+        <label for="uniqueCharsInput">Input:</label>
+        <textarea id="uniqueCharsInput" type="text" name="uniqueCharsInput" placeholder="paste text here"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <label for="uniqueCharsOutput">Output:</label>
+      <textarea id="uniqueCharsOutput" type="text" name="uniqueCharsOutput"></textarea>
+    </section>
+
+    <section>
+      <h3>Replace new lines with ", " (comma and space)</h3>
+      <div class="callout">
+        <p><strong>For example:</strong></p>
+        <pre>
+Afghanistan
+Albania
+Algeria
+Andorra
+Angola
+</pre>
+        <p>⬇️ ⬇️ ⬇️</p>
+        <p>Afghanistan, Albania, Algeria, Andorra, Angola</p>
+      </div>
+      <form id="replaceNewLines">
+        <label for="replaceNewLinesInput">Input:</label>
+        <textarea id="replaceNewLinesInput" type="text" name="replaceNewLinesInput" placeholder="paste text here"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <label for="replaceNewLinesOutput">Output:</label>
+      <textarea id="replaceNewLinesOutput" type="text" name="replaceNewLinesOutput"></textarea>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <section id="notes">
+      <h3>notes</h3>
+      <!-- notes -->
+      <p>I may add more utils in the future to this one. If you have requests, send them my way somehow!</p>
+    </section>
+
+    <small>
+      made by <a href="https://www.nickang.com/">Nick Ang</a> (follow on <a href="https://www.instagram.com/nickang_crap/">IG</a>) on <time>
+        18 Jan 2023
+      </time> in the south of Spain as part of the <a href="../">Everydays project</a>.
+    </small>
+  </footer>
+</body>
+</html>
+
