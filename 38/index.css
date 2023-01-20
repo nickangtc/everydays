@@ -1,0 +1,45 @@
+* {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+
+body {
+  padding: 1em 2em;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+canvas {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 3em auto;
+  background-color: white;
+  transition: background-color 0.5s ease-out;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  margin-bottom: 2em;
+}
+
+#notes, small {
+  color: #666;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    padding: 0;
+  }
+
+  main {
+    overflow-x: auto;
+  }
+
+  canvas {
+    margin: 2em 1em;
+  }
+}
