@@ -1,5 +1,3 @@
-console.log("loaded");
-
 const currentElement = document.querySelector("#current");
 const changelogElement = document.querySelector("#changelog");
 const incrementButton = document.querySelector("#increment");
